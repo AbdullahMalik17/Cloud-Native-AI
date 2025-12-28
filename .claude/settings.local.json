@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scripts/fetch-docs.sh:*)",
+      "Skill(skill-creator)"
+    ]
+  }
+}
