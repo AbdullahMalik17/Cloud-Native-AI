@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(bash scripts/fetch-docs.sh:*)",
-      "Skill(skill-creator)"
+      "Skill(skill-creator)",
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Bash(powershell -Command \"Expand-Archive -Path ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery.skill'' -DestinationPath ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery-verify'' -Force; Get-ChildItem -Recurse ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery-verify''\")",
+      "Bash(powershell:*)",
+      "Bash(uv add:*)",
+      "Bash(uv run pytest:*)"
     ]
   }
 }
