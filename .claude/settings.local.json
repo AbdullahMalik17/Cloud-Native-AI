@@ -8,7 +8,9 @@
       "Bash(powershell -Command \"Expand-Archive -Path ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery.skill'' -DestinationPath ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery-verify'' -Force; Get-ChildItem -Recurse ''F:\\\\Cloud-Native-AI\\\\.claude\\\\skills\\\\pytest-mastery-verify''\")",
       "Bash(powershell:*)",
       "Bash(uv add:*)",
-      "Bash(uv run pytest:*)"
+      "Bash(uv run pytest:*)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs"
     ]
   }
 }
