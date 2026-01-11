@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI , HTTPException
 from pydantic import BaseModel
 
 class Task_Model(BaseModel):
@@ -21,6 +21,8 @@ def health_check():
 
 @app.post("/tasks", response_model=Task_Model)
 def create_task(task: Task_Model):
+    if task.id == 0:
+        raise HTTPException(status_code=400, detail="Task ID cannot be zero")
     # In a real app, this would add to a database
     # For now, just return the task as created
     return task
